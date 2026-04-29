@@ -200,7 +200,7 @@ body {
   border: 1px solid #dbe1ea;
 }
 
-.wide-card span {
+.status {
   display: inline-block;
   padding: 8px 14px;
   border-radius: 999px;
@@ -229,6 +229,24 @@ body {
   color: #64748b !important;
 }
 
+.chips {
+  margin-top: 26px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.chips span {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: #eef2f7;
+  border: 1px solid #dbe1ea;
+  color: #0b132b;
+  font-size: 13px;
+  font-weight: 700;
+}
+
 .project-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -236,7 +254,7 @@ body {
 }
 
 .project-card {
-  min-height: 310px;
+  min-height: 330px;
   padding: 36px;
   border-radius: 28px;
   background: #ffffff;
@@ -255,9 +273,15 @@ body {
   line-height: 1.8;
 }
 
+.project-card ul {
+  margin-top: 22px;
+  padding-left: 20px;
+}
+
 .project-card li {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   color: #475569;
+  line-height: 1.6;
 }
 
 .soft {
@@ -271,37 +295,60 @@ body {
 }
 
 .connect {
-  padding: 110px 7%;
+  margin: 70px 7% 80px;
+  padding: 56px 46px;
+  border-radius: 30px;
   background: #0b132b;
   color: #ffffff;
 }
 
+.connect .label {
+  color: #cbd5e1;
+}
+
 .connect h2 {
-  max-width: 1100px;
+  margin: 0;
   font-size: 42px;
-  line-height: 1.5;
-  letter-spacing: -1px;
+  line-height: 1.35;
 }
 
-.contact {
-  margin-top: 40px;
-  padding-top: 30px;
-  border-top: 1px solid rgba(255,255,255,0.2);
-}
-
-.contact p {
-  font-size: 18px;
+.connect-desc {
+  margin-top: 26px;
+  max-width: 900px;
   color: #e2e8f0;
+  line-height: 1.8;
+  font-size: 17px;
 }
 
-.contact a {
+.connect-info {
+  margin-top: 30px;
+}
+
+.connect-info p {
+  color: #ffffff;
+  font-size: 17px;
+  margin: 16px 0;
+}
+
+.connect-buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 14px;
+}
+
+.connect-buttons a {
+  display: inline-block;
+  padding: 14px 22px;
+  border-radius: 999px;
   color: #ffffff;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 800;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.08);
 }
 
-.contact a:hover {
-  text-decoration: underline;
+.connect-buttons a:hover {
+  background: rgba(255, 255, 255, 0.18);
 }
 
 @media (max-width: 900px) {
